@@ -59,7 +59,7 @@ def llm_output(llm_response):
 from google.cloud import secretmanager
 from google.api_core.exceptions import NotFound
 
-GOOGLE_API_KEY='AIzaSyC7fY_fheQUjk2KRfnuGTs8A3UhBa3t-OU'
+
 llm = ChatGoogleGenerativeAI(model="gemini-pro", google_api_key=GOOGLE_API_KEY)
 print(llm.invoke("tell me a joke").content)
 
